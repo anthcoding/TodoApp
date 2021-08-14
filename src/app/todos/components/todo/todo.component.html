@@ -1,0 +1,27 @@
+<div [ngClass]="{ editing: isEditingPorps }" class="listTodos">
+  <div class="todo">
+    <div class="divInput">
+      <input
+        type="checkbox"
+        [checked]="todoProps.isCompleted"
+        (change)="toggleTodo()"
+        class="input"
+      />
+      <label class="label" (click)="setTodoInEditMode()">
+        {{ todoProps.text }}
+      </label>
+    </div>
+    <button class="delete" (click)="deleteTodo()">x</button>
+  </div>
+
+  <ng-container *ngIf="isEditingPorps">
+    <input
+      #textInput
+      type="text"
+      class="editInput"
+      [value]="editingText"
+      (keyup)="changeText($event)"
+      (keyup.enter)="changeTodo()"
+    />
+  </ng-container>
+</div>

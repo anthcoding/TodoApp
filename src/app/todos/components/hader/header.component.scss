@@ -1,0 +1,21 @@
+.header {
+  display: flex;
+  justify-content: center;
+  .newHeaderTodo {
+    background-color: #0a192b;
+    color: hsla(177, 87%, 79%, 0.9);
+    border: none;
+    border-radius: 10px;
+    padding: 5px 20px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    &::placeholder {
+      color: hsla(177, 87%, 79%, 0.7);
+      font-weight: 200;
+    }
+  }
+}

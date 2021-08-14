@@ -1,0 +1,28 @@
+.footer {
+  color: white;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  border-bottom: 1px solid #0a192b;
+  padding: 20px;
+  .navMenu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    .navItem {
+      margin: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 10px;
+      transition: all 0.2s ease-in;
+    }
+  }
+}
+.hidden {
+  opacity: 0;
+}
+.actived {
+  background-color: #0a192b;
+}

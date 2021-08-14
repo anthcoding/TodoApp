@@ -1,0 +1,21 @@
+.app {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 10vh 0;
+
+  .title {
+    text-align: center;
+    margin: 10%;
+    padding: 5%;
+    width: 100%;
+    font-size: 6rem;
+    color: hsla(177, 87%, 79%, 1);
+    font-weight: lighter;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #0a192b;
+    font-family: "Shadows Into Light";
+  }
+}

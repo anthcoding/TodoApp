@@ -1,0 +1,11 @@
+<header class="header">
+  <input
+    class="newHeaderTodo"
+    placeholder="add task..."
+    type="text"
+    autofocus
+    [value]="text"
+    (keyup)="changeText($event)"
+    (keyup.enter)="addTodo()"
+  />
+</header>

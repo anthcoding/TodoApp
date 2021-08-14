@@ -1,0 +1,28 @@
+<div class="footer" [ngClass]="{ hidden: noTodosClass$ | async }">
+  <div class="navMenu">
+    <div
+      class="navItem"
+      href="/"
+      [ngClass]="{ actived: (filter$ | async) === filterEnum.all }"
+      (click)="changeMenu($event, filterEnum.all)"
+    >
+      All
+    </div>
+    <div
+      class="navItem"
+      href="/"
+      [ngClass]="{ actived: (filter$ | async) === filterEnum.active }"
+      (click)="changeMenu($event, filterEnum.active)"
+    >
+      Uncompleted
+    </div>
+    <div
+      class="navItem"
+      href="/"
+      [ngClass]="{ actived: (filter$ | async) === filterEnum.completed }"
+      (click)="changeMenu($event, filterEnum.completed)"
+    >
+      Completed
+    </div>
+  </div>
+</div>
